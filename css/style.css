@@ -25,19 +25,24 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px;
+  padding: 32px;
+  background-color: rgba(234, 232, 232, 0.374);
 }
 .description-section h1 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 800;
   text-align: center;
   padding: 0 32px;
-  margin: 8px 0;
+  margin: 0 0 16px 0;
 }
 .description-section span {
   color: rgb(113, 113, 113);
   font-weight: 400;
+  font-size: 1.2rem;
   text-align: center;
+}
+.description-section .pink-btn {
+  margin: 32px 0 16px 0;
 }
 
 .location-section {
@@ -59,10 +64,10 @@ header {
 .pink-btn {
   color: white;
   font-weight: 500;
-  border-radius: 32px;
-  padding: 16px;
-  margin-top: 32px;
-  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  border-radius: 64px;
+  padding: 16px 24px;
+  box-shadow: 0 1px 10px gray;
+  background: linear-gradient(to bottom right, #ff79da, 40%, #9356dc);
 }
 
 body {

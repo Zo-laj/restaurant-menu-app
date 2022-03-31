@@ -1,0 +1,18 @@
+.location-section {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(236, 234, 234, 0.781);
+  padding: 16px;
+  color: rgb(66, 66, 66);
+
+  span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding-right: 32px;
+  }
+
+  i {
+    padding-right: 16px;
+  }
+}

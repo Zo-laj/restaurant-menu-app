@@ -6,6 +6,19 @@ body {
 a {
   text-decoration: none;
   text-transform: none;
+  color: black;
+}
+
+h3 {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
 }
 
 .location-section {
@@ -33,6 +46,53 @@ a {
   background: linear-gradient(to bottom right, #ff79da, 40%, #9356dc);
 }
 .pink-btn:hover {
+  cursor: pointer;
+}
+
+.restaurant-card {
+  display: flex;
+  flex-direction: column;
+  height: 256px;
+  margin: 16px 0;
+  border-radius: 16px;
+  box-shadow: 1px 1px 10px grey;
+}
+.restaurant-card .card-img {
+  height: 70%;
+}
+.restaurant-card .card-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.restaurant-card .card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30%;
+  padding: 0 16px;
+}
+.restaurant-card .card-content h3 {
+  font-weight: 800;
+  padding-bottom: 4px;
+}
+.restaurant-card .card-content span {
+  font-size: 1.1rem;
+}
+.restaurant-card .card-content .heart-icon {
+  font-size: 1.6rem;
+  padding-right: 8px;
+}
+
+.fa-heart::before {
+  transition: color 2s ease-out;
+}
+
+.fa-heart:hover::before {
+  color: red;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -123,6 +183,34 @@ header {
 }
 .instruction-card:hover i {
   color: #9356dc;
+}
+
+.restaurants-section {
+  padding: 38px 24px;
+  background-color: rgba(216, 215, 215, 0.256);
+}
+
+footer {
+  background-color: rgb(46, 46, 46);
+  padding: 24px;
+  color: rgb(234, 231, 231);
+}
+
+#logo-footer {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.1rem;
+}
+
+.footer-content li {
+  margin-bottom: 8px;
+}
+.footer-content li i {
+  padding-right: 8px;
+  font-size: 0.7rem;
+}
+.footer-content li a {
+  color: rgb(234, 231, 231);
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,51 @@
+.restaurant-card {
+  display: flex;
+  flex-direction: column;
+  height: 256px;
+  margin: 16px 0;
+  border-radius: 16px;
+  box-shadow: 1px 1px 10px grey;
+
+  .card-img {
+    height: 70%;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+    }
+  }
+
+  .card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+    padding: 0 16px;
+
+    h3 {
+      font-weight: 800;
+      padding-bottom: 4px;
+    }
+
+    span {
+      font-size: 1.1rem;
+    }
+
+    .heart-icon {
+      font-size: 1.6rem;
+      padding-right: 8px;
+    }
+  }
+}
+
+.fa-heart::before {
+  transition: color 2s ease-out;
+}
+.fa-heart:hover::before {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}

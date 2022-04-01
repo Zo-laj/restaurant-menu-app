@@ -8,5 +8,12 @@
 
   &:hover {
     cursor: pointer;
+    background: linear-gradient(
+      to bottom right,
+      $pink-color,
+      70%,
+      $purple-color
+    );
+    box-shadow: 0 1px 8px rgb(44, 44, 44);
   }
 }

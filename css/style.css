@@ -47,6 +47,8 @@ ul {
 }
 .pink-btn:hover {
   cursor: pointer;
+  background: linear-gradient(to bottom right, #ff79da, 70%, #9356dc);
+  box-shadow: 0 1px 8px rgb(44, 44, 44);
 }
 
 .restaurant-card {
@@ -103,6 +105,9 @@ ul {
   margin: 16px 0;
   border-radius: 16px;
   box-shadow: 0 0 10px rgb(187, 186, 186);
+}
+.food-card:hover {
+  cursor: pointer;
 }
 
 .food-description {
@@ -243,7 +248,7 @@ footer {
   color: rgb(234, 231, 231);
 }
 
-#logo-footer {
+.logo-footer {
   font-family: "Shrikhand", cursive;
   font-size: 1.1rem;
 }
@@ -294,7 +299,7 @@ footer {
 }
 
 .meals-section {
-  padding: 24px 0;
+  padding-top: 32px;
 }
 .meals-section h2 {
   margin: 0;
@@ -315,6 +320,10 @@ footer {
   display: flex;
   justify-content: center;
   align-content: center;
+  padding: 32px 0;
+}
+.order-section .pink-btn {
+  padding: 16px 48px;
 }
 
 /*# sourceMappingURL=style.css.map */

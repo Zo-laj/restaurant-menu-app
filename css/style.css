@@ -1,3 +1,41 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  text-transform: none;
+}
+
+.location-section {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(236, 234, 234, 0.781);
+  padding: 16px;
+  color: rgb(76, 76, 76);
+}
+.location-section span {
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding-right: 32px;
+}
+.location-section i {
+  padding-right: 16px;
+}
+
+.pink-btn {
+  color: white;
+  font-weight: 500;
+  border-radius: 64px;
+  padding: 16px 24px;
+  box-shadow: 0 1px 10px gray;
+  background: linear-gradient(to bottom right, #ff79da, 40%, #9356dc);
+}
+.pink-btn:hover {
+  cursor: pointer;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -36,7 +74,7 @@ header {
   margin: 0 0 16px 0;
 }
 .description-section span {
-  color: rgb(113, 113, 113);
+  color: rgb(76, 76, 76);
   font-weight: 400;
   font-size: 1.2rem;
   text-align: center;
@@ -45,39 +83,46 @@ header {
   margin: 32px 0 16px 0;
 }
 
-.location-section {
+.instruction-section {
+  padding: 32px;
+}
+
+.instruction-card {
+  display: flex;
+  align-items: center;
+  margin: 0 0 24px 16px;
+  padding: 24px;
+  background-color: rgba(223, 222, 222, 0.466);
+  box-shadow: 1px 1px 20px rgb(173, 173, 173);
+  color: rgb(76, 76, 76);
+  border-radius: 24px;
+}
+.instruction-card div {
   display: flex;
   justify-content: center;
-  background-color: rgba(236, 234, 234, 0.781);
-  padding: 16px;
-  color: rgb(66, 66, 66);
-}
-.location-section span {
-  font-weight: 700;
-  font-size: 1.1rem;
-  padding-right: 32px;
-}
-.location-section i {
-  padding-right: 16px;
-}
-
-.pink-btn {
+  align-items: center;
   color: white;
-  font-weight: 500;
-  border-radius: 64px;
-  padding: 16px 24px;
-  box-shadow: 0 1px 10px gray;
-  background: linear-gradient(to bottom right, #ff79da, 40%, #9356dc);
+  background-color: #9356dc;
+  font-size: 0.9rem;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  margin-left: -36px;
+}
+.instruction-card i {
+  padding: 0 16px;
+  font-size: 1.2rem;
+  color: rgb(125, 125, 125);
+}
+.instruction-card span {
+  font-weight: 600;
 }
 
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
+.instruction-card:hover {
+  background-color: rgba(146, 86, 220, 0.1529411765);
 }
-
-a {
-  text-decoration: none;
-  text-transform: none;
+.instruction-card:hover i {
+  color: #9356dc;
 }
 
 /*# sourceMappingURL=style.css.map */

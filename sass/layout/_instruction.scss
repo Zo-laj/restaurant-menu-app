@@ -1,0 +1,45 @@
+.instruction-section {
+  padding: 32px;
+}
+
+.instruction-card {
+  display: flex;
+  align-items: center;
+  margin: 0 0 24px 16px;
+  padding: 24px;
+  background-color: rgba(223, 222, 222, 0.466);
+  box-shadow: 1px 1px 20px rgb(173, 173, 173);
+  color: $grey-font;
+  border-radius: 24px;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: $purple-color;
+    font-size: 0.9rem;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    margin-left: -36px;
+  }
+
+  i {
+    padding: 0 16px;
+    font-size: 1.2rem;
+    color: rgb(125, 125, 125);
+  }
+
+  span {
+    font-weight: 600;
+  }
+}
+
+.instruction-card:hover {
+  background-color: #9256dc27;
+
+  i {
+    color: $purple-color;
+  }
+}

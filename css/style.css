@@ -96,6 +96,53 @@ ul {
   cursor: pointer;
 }
 
+.food-card {
+  display: flex;
+  background-color: white;
+  align-content: stretch;
+  margin: 16px 0;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgb(187, 186, 186);
+}
+
+.food-description {
+  width: 80%;
+  padding: 12px;
+}
+.food-description h3 {
+  font-size: 1.1rem;
+}
+.food-description span {
+  font-size: 0.9rem;
+  color: rgb(76, 76, 76);
+}
+
+.food-price {
+  display: flex;
+  align-items: flex-end;
+  padding: 12px;
+}
+.food-price span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgb(76, 76, 76);
+}
+
+.food-choose-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #99e2d0;
+  width: 20%;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  display: none;
+}
+.food-choose-btn i {
+  font-size: 1.3rem;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -215,7 +262,6 @@ footer {
 
 .background-img {
   height: 256px;
-  z-index: 1;
 }
 .background-img img {
   object-fit: cover;
@@ -224,18 +270,18 @@ footer {
 }
 
 .menu-section {
-  padding: 32px 24px;
+  padding: 32px 16px;
   position: relative;
   margin-top: -32px;
   border-top-right-radius: 32px;
   border-top-left-radius: 32px;
   background-color: rgb(224, 223, 223);
-  z-index: 2;
 }
 .menu-section .restaurant-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 8px;
 }
 .menu-section h1 {
   font-family: "Shrikhand", cursive;
@@ -255,9 +301,11 @@ footer {
   font-size: 1.1rem;
   font-weight: 400;
   color: rgb(76, 76, 76);
+  padding-left: 8px;
 }
 .meals-section .green-border {
   margin-top: 2px;
+  margin-left: 8px;
   width: 44px;
   height: 3px;
   background-color: #99e2d0;

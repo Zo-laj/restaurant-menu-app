@@ -1,0 +1,50 @@
+.food-card {
+  display: flex;
+  background-color: white;
+  align-content: stretch;
+  margin: 16px 0;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgb(187, 186, 186);
+}
+
+.food-description {
+  width: 80%;
+  padding: 12px;
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  span {
+    font-size: 0.9rem;
+    color: $grey-font;
+  }
+}
+
+.food-price {
+  display: flex;
+  align-items: flex-end;
+  padding: 12px;
+
+  span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: $grey-font;
+  }
+}
+
+.food-choose-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: $green-color;
+  width: 20%;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  display: none;
+
+  i {
+    font-size: 1.3rem;
+  }
+}

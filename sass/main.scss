@@ -2,12 +2,15 @@
 
 @import "base/base";
 
-@import "components/locationBar";
-@import "components/pinkBtn";
-@import "components/restaurantCard";
+@import "components/location-bar";
+@import "components/pink-btn";
+@import "components/restaurant-card";
 
 @import "layout/header";
 @import "layout/description";
 @import "layout/instruction";
 @import "layout/restaurants";
 @import "layout/footer";
+
+@import "pages/accueil";
+@import "pages/menu";

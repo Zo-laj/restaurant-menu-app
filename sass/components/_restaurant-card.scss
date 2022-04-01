@@ -45,7 +45,7 @@
   transition: color 2s ease-out;
 }
 .fa-heart:hover::before {
-  color: red;
+  color: $pink-color;
   font-weight: bold;
   cursor: pointer;
 }

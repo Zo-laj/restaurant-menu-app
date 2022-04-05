@@ -60,7 +60,9 @@ ul {
   box-shadow: 1px 1px 10px grey;
 }
 .restaurant-card .card-img {
+  display: block;
   height: 70%;
+  position: relative;
 }
 .restaurant-card .card-img img {
   object-fit: cover;
@@ -68,6 +70,17 @@ ul {
   height: 100%;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+}
+.restaurant-card .card-img .new {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background-color: #99e2d0;
+  color: #179775;
+  padding: 4px 16px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 3px;
 }
 .restaurant-card .card-content {
   display: flex;

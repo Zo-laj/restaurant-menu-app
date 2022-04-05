@@ -25,7 +25,7 @@
       top: 16px;
       background-color: $green-color;
       color: $darkgreen-color;
-      padding: 4px 16px;
+      padding: 8px 16px;
       font-weight: 600;
       font-size: 0.9rem;
       border-radius: 3px;
@@ -47,19 +47,5 @@
     span {
       font-size: 1.1rem;
     }
-
-    .heart-icon {
-      font-size: 1.6rem;
-      padding-right: 8px;
-    }
   }
-}
-
-.fa-heart::before {
-  transition: color 2s ease-out;
-}
-.fa-heart:hover::before {
-  color: $pink-color;
-  font-weight: bold;
-  cursor: pointer;
 }

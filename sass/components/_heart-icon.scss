@@ -1,0 +1,13 @@
+.heart-icon {
+  font-size: 1.6rem;
+  padding-right: 8px;
+
+  .fa-heart::before {
+    transition: color 2s ease-out;
+  }
+  .fa-heart:hover::before {
+    color: $pink-color;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

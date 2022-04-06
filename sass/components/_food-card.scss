@@ -40,7 +40,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    object-fit: cover;
     width: 0;
     background-color: $green-color;
     border-top-right-radius: 16px;
@@ -51,6 +50,7 @@
 
     i {
       color: white;
+      line-height: normal;
       font-size: 1.2rem;
       overflow: hidden;
       transition: transform 800ms 200ms;
@@ -61,7 +61,6 @@
     cursor: pointer;
     & .food-choose-btn {
       width: 25%;
-      overflow: hidden;
       transform: translateX(0);
       z-index: 1;
 

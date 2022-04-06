@@ -67,14 +67,14 @@
 }
 
 .apetizer {
-  animation: apetizer-apparition 1000ms ease-in-out;
+  animation: apetizer-apparition 600ms ease-in-out;
 }
 
 .main-course {
-  animation: main-course-apparition 2000ms ease-in-out;
+  animation: main-course-apparition 1200ms ease-in-out;
 }
 .dessert {
-  animation: main-course-apparition 3000ms ease-in-out;
+  animation: main-course-apparition 1800ms ease-in-out;
 }
 
 @keyframes apetizer-apparition {

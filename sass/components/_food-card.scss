@@ -1,54 +1,72 @@
+.meals-category-content {
+  z-index: 2;
+}
+
 .food-card {
   display: flex;
   background-color: white;
-  align-content: stretch;
-  margin: 16px 0;
+  margin: 16px;
   border-radius: 16px;
   box-shadow: 0 0 10px rgb(187, 186, 186);
+  z-index: 1;
+
+  .food-description {
+    width: 80%;
+    padding: 12px;
+
+    h3 {
+      font-size: 1.1rem;
+    }
+
+    span {
+      font-size: 0.9rem;
+      color: $grey-font;
+    }
+  }
+
+  .food-price {
+    display: flex;
+    align-items: flex-end;
+    padding: 12px;
+
+    span {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: $grey-font;
+    }
+  }
+
+  .food-choose-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    width: 0;
+    background-color: $green-color;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    transform-origin: right;
+    transition: all 1500ms;
+    z-index: -1;
+
+    i {
+      color: white;
+      font-size: 1.2rem;
+      transition: transform 800ms 200ms;
+    }
+  }
 
   &:hover {
     cursor: pointer;
-  }
-}
+    & .food-choose-btn {
+      width: 25%;
+      overflow: hidden;
+      transform: translateX(0);
+      z-index: 1;
 
-.food-description {
-  width: 80%;
-  padding: 12px;
-
-  h3 {
-    font-size: 1.1rem;
-  }
-
-  span {
-    font-size: 0.9rem;
-    color: $grey-font;
-  }
-}
-
-.food-price {
-  display: flex;
-  align-items: flex-end;
-  padding: 12px;
-
-  span {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: $grey-font;
-  }
-}
-
-.food-choose-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-color: $green-color;
-  width: 20%;
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
-  display: none;
-
-  i {
-    font-size: 1.3rem;
+      & > i {
+        transform: rotate(360deg);
+      }
+    }
   }
 }

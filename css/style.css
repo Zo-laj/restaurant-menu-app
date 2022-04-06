@@ -110,54 +110,68 @@ ul {
   cursor: pointer;
 }
 
+.meals-category-content {
+  z-index: 2;
+}
+
 .food-card {
   display: flex;
   background-color: white;
-  align-content: stretch;
-  margin: 16px 0;
+  margin: 16px;
   border-radius: 16px;
   box-shadow: 0 0 10px rgb(187, 186, 186);
+  z-index: 1;
 }
-.food-card:hover {
-  cursor: pointer;
-}
-
-.food-description {
+.food-card .food-description {
   width: 80%;
   padding: 12px;
 }
-.food-description h3 {
+.food-card .food-description h3 {
   font-size: 1.1rem;
 }
-.food-description span {
+.food-card .food-description span {
   font-size: 0.9rem;
   color: rgb(76, 76, 76);
 }
-
-.food-price {
+.food-card .food-price {
   display: flex;
   align-items: flex-end;
   padding: 12px;
 }
-.food-price span {
+.food-card .food-price span {
   font-size: 0.9rem;
   font-weight: 600;
   color: rgb(76, 76, 76);
 }
-
-.food-choose-btn {
+.food-card .food-choose-btn {
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: white;
+  justify-content: center;
+  object-fit: cover;
+  width: 0;
   background-color: #99e2d0;
-  width: 20%;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
-  display: none;
+  transform-origin: right;
+  transition: all 1500ms;
+  z-index: -1;
 }
-.food-choose-btn i {
-  font-size: 1.3rem;
+.food-card .food-choose-btn i {
+  color: white;
+  font-size: 1.2rem;
+  transition: transform 800ms 200ms;
+}
+.food-card:hover {
+  cursor: pointer;
+}
+.food-card:hover .food-choose-btn {
+  width: 25%;
+  overflow: hidden;
+  transform: translateX(0);
+  z-index: 1;
+}
+.food-card:hover .food-choose-btn > i {
+  transform: rotate(360deg);
 }
 
 header {

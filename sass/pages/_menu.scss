@@ -65,3 +65,51 @@
     padding: 16px 48px;
   }
 }
+
+.apetizer {
+  animation: apetizer-apparition 1000ms ease-in-out;
+}
+
+.main-course {
+  animation: main-course-apparition 2000ms ease-in-out;
+}
+.dessert {
+  animation: main-course-apparition 3000ms ease-in-out;
+}
+
+@keyframes apetizer-apparition {
+  0% {
+    display: none;
+    transform: translateY(16px);
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes main-course-apparition {
+  0% {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes desert-apparition {
+  0% {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

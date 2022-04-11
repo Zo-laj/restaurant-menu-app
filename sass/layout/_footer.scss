@@ -21,4 +21,9 @@ footer {
     color: rgb(234, 231, 231);
     font-weight: 400;
   }
+
+  a:hover {
+    text-decoration: underline rgb(234, 231, 231);
+    cursor: pointer;
+  }
 }

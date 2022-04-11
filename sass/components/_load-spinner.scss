@@ -2,6 +2,13 @@
   display: flex;
   justify-content: center;
   padding: 32px 0;
+  width: 100%;
+  height: 0;
+  box-shadow: 0 0 10px rgb(232, 231, 231);
+  background-color: rgba(255, 255, 255, 0.927);
+  opacity: 0;
+  animation: load-spinner-section 2s ease-in-out;
+  position: absolute;
 }
 
 .load-spinner {
@@ -79,5 +86,22 @@
   }
   50% {
     opacity: 0.5;
+  }
+}
+
+@keyframes load-spinner-section {
+  0% {
+    opacity: 1;
+    height: 1000px;
+  }
+
+  97% {
+    opacity: 1;
+    height: 1000px;
+  }
+
+  100% {
+    opacity: 0;
+    height: 0;
   }
 }

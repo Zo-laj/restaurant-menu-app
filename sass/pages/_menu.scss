@@ -79,13 +79,11 @@
 
 @keyframes apetizer-apparition {
   0% {
-    display: none;
     transform: translateY(16px);
     opacity: 0;
   }
 
   100% {
-    display: block;
     transform: translateY(0);
     opacity: 1;
   }

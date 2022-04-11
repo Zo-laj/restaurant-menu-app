@@ -222,9 +222,15 @@ ul {
 .food-card .food-description {
   width: 80%;
   padding: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .food-card .food-description h3 {
   font-size: 1.1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .food-card .food-description span {
   font-size: 0.9rem;
@@ -355,6 +361,7 @@ header {
 
 .instruction-card:hover {
   background-color: rgba(146, 86, 220, 0.1529411765);
+  cursor: pointer;
 }
 .instruction-card:hover i {
   color: #9356dc;

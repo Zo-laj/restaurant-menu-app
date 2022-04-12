@@ -66,68 +66,20 @@
   }
 }
 
-.apetizer {
-  animation: apetizer-apparition 600ms ease-in-out;
-}
-
-.main-course {
-  animation: main-course-apparition 1200ms ease-in-out;
-}
-.dessert {
-  animation: main-course-apparition 1800ms ease-in-out;
-}
-
-@keyframes apetizer-apparition {
-  0% {
-    transform: translateY(16px);
-    opacity: 0;
+@for $i from 1 through 3 {
+  .meals-apparition#{$i} {
+    animation: menu-apparition 600ms * $i ease-in-out;
   }
 
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes main-course-apparition {
-  0% {
-    transform: translateY(16px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes desert-apparition {
-  0% {
-    transform: translateY(16px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@media (min-width: 768px) {
-  .menu-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .restaurant-header {
-      justify-content: flex-start;
+  @keyframes menu-apparition {
+    0% {
+      transform: translateY(16px);
+      opacity: 0;
     }
 
-    .heart-icon {
-      padding-left: 24px;
+    100% {
+      transform: translateY(0);
+      opacity: 1;
     }
-  }
-
-  .meals-section {
-    width: 60%;
   }
 }

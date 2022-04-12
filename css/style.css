@@ -494,19 +494,11 @@ footer {
   padding: 16px 48px;
 }
 
-.apetizer {
-  animation: apetizer-apparition 600ms ease-in-out;
+.meals-apparition1 {
+  animation: menu-apparition 600ms ease-in-out;
 }
 
-.main-course {
-  animation: main-course-apparition 1200ms ease-in-out;
-}
-
-.dessert {
-  animation: main-course-apparition 1800ms ease-in-out;
-}
-
-@keyframes apetizer-apparition {
+@keyframes menu-apparition {
   0% {
     transform: translateY(16px);
     opacity: 0;
@@ -516,41 +508,32 @@ footer {
     opacity: 1;
   }
 }
-@keyframes main-course-apparition {
-  0% {
-    transform: translateY(16px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+.meals-apparition2 {
+  animation: menu-apparition 1200ms ease-in-out;
 }
-@keyframes desert-apparition {
-  0% {
-    transform: translateY(16px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@media (min-width: 768px) {
-  .menu-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .menu-section .restaurant-header {
-    justify-content: flex-start;
-  }
-  .menu-section .heart-icon {
-    padding-left: 24px;
-  }
 
-  .meals-section {
-    width: 60%;
+@keyframes menu-apparition {
+  0% {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.meals-apparition3 {
+  animation: menu-apparition 1800ms ease-in-out;
+}
+
+@keyframes menu-apparition {
+  0% {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 

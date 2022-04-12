@@ -280,14 +280,15 @@ ul {
 header {
   display: flex;
   align-items: center;
-  padding: 16px 32px;
+  padding: 16px 0;
   box-shadow: 1px 1px 5px rgb(170, 169, 169);
 }
 
 .logo-container {
+  width: 99%;
   display: flex;
   justify-content: center;
-  width: 100%;
+  flex-grow: 3;
 }
 
 #logo {
@@ -295,9 +296,12 @@ header {
 }
 
 .go-back-arrow {
+  display: flex;
   justify-self: flex-start;
   font-size: 1.5rem;
   color: black;
+  margin-left: 32px;
+  width: 1%;
 }
 
 .description-section {
@@ -367,11 +371,41 @@ header {
   color: #9356dc;
 }
 
+@media (min-width: 768px) {
+  .instruction-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .instruction-card {
+    padding: 24px 64px;
+    width: 300px;
+  }
+  .instruction-card div {
+    margin-left: -76px;
+  }
+}
 .restaurants-section {
   padding: 38px 24px;
   background-color: rgba(216, 215, 215, 0.256);
 }
 
+@media (min-width: 768px) {
+  .restaurant-card-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  a {
+    width: 50%;
+  }
+
+  .restaurant-card {
+    margin: 16px;
+  }
+}
 footer {
   background-color: rgb(46, 46, 46);
   padding: 24px;
@@ -500,6 +534,23 @@ footer {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@media (min-width: 768px) {
+  .menu-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-section .restaurant-header {
+    justify-content: flex-start;
+  }
+  .menu-section .heart-icon {
+    padding-left: 24px;
+  }
+
+  .meals-section {
+    width: 60%;
   }
 }
 

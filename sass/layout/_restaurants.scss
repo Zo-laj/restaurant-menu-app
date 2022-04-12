@@ -2,3 +2,19 @@
   padding: 38px 24px;
   background-color: rgba(216, 215, 215, 0.256);
 }
+
+@media (min-width: 768px) {
+  .restaurant-card-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  a {
+    width: 50%;
+  }
+
+  .restaurant-card {
+    margin: 16px;
+  }
+}

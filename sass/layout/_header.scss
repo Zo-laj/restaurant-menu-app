@@ -6,7 +6,7 @@ header {
 }
 
 .logo-container {
-  width: 99%;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-grow: 3;
@@ -17,13 +17,8 @@ header {
 }
 
 .go-back-arrow {
-  display: flex;
-  justify-self: flex-start;
+  position: absolute;
   font-size: 1.5rem;
   color: black;
-  margin-left: 32px;
-  width: 1%;
-}
-
-@media (min-width: 768px) {
+  margin-left: 24px;
 }

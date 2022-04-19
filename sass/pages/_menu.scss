@@ -70,17 +70,16 @@
   .meals-apparition#{$i} {
     animation: menu-apparition 600ms * $i ease-in-out;
   }
+}
+@keyframes menu-apparition {
+  0% {
+    transform: translateY(16px);
+    opacity: 0;
+  }
 
-  @keyframes menu-apparition {
-    0% {
-      transform: translateY(16px);
-      opacity: 0;
-    }
-
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 

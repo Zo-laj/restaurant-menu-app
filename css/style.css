@@ -496,30 +496,10 @@ footer {
   animation: menu-apparition 600ms ease-in-out;
 }
 
-@keyframes menu-apparition {
-  0% {
-    transform: translateY(16px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 .meals-apparition2 {
   animation: menu-apparition 1200ms ease-in-out;
 }
 
-@keyframes menu-apparition {
-  0% {
-    transform: translateY(16px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 .meals-apparition3 {
   animation: menu-apparition 1800ms ease-in-out;
 }

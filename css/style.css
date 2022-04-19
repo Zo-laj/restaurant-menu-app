@@ -302,30 +302,6 @@ header {
   margin-left: 24px;
 }
 
-.description-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 32px;
-  background-color: rgba(234, 232, 232, 0.374);
-}
-.description-section h1 {
-  font-size: 1.6rem;
-  font-weight: 800;
-  text-align: center;
-  padding: 0 32px;
-  margin: 0 0 16px 0;
-}
-.description-section span {
-  color: rgb(76, 76, 76);
-  font-weight: 400;
-  font-size: 1.2rem;
-  text-align: center;
-}
-.description-section .pink-btn {
-  margin: 32px 0 16px 0;
-}
-
 .instruction-section {
   padding: 32px;
 }
@@ -429,6 +405,30 @@ footer {
 .footer-content li a:hover {
   text-decoration: underline rgb(234, 231, 231);
   cursor: pointer;
+}
+
+.description-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  background-color: rgba(234, 232, 232, 0.374);
+}
+.description-section h1 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 0 32px;
+  margin: 0 0 16px 0;
+}
+.description-section span {
+  color: rgb(76, 76, 76);
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.description-section .pink-btn {
+  margin: 32px 0 16px 0;
 }
 
 .background-img {

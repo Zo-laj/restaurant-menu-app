@@ -1,0 +1,26 @@
+.description-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  background-color: rgba(234, 232, 232, 0.374);
+
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-align: center;
+    padding: 0 32px;
+    margin: 0 0 16px 0;
+  }
+
+  span {
+    color: $grey-font;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .pink-btn {
+    margin: 32px 0 16px 0;
+  }
+}

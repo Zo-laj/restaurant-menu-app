@@ -199,7 +199,7 @@ ul {
   padding-right: 8px;
 }
 .heart-icon .fa-heart::before {
-  transition: color 2s ease-out;
+  transition: color 300ms ease-out;
 }
 .heart-icon .fa-heart:hover::before {
   color: #ff79da;

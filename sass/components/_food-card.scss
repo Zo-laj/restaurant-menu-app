@@ -50,7 +50,6 @@
     background-color: $green-color;
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
-    transform-origin: right;
     transition: all 1500ms;
     z-index: -1;
 
@@ -66,9 +65,8 @@
   &:hover {
     cursor: pointer;
     & .food-choose-btn {
-      width: 25%;
-      transform: translateX(0);
       z-index: 1;
+      width: 25%;
 
       & > i {
         transform: rotate(360deg);

@@ -3,7 +3,7 @@
   padding-right: 8px;
 
   .fa-heart::before {
-    transition: color 300ms ease-out;
+    transition: color 600ms ease-out;
   }
   .fa-heart:hover::before {
     color: $pink-color;

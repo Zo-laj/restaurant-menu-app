@@ -199,7 +199,7 @@ ul {
   padding-right: 8px;
 }
 .heart-icon .fa-heart::before {
-  transition: color 300ms ease-out;
+  transition: color 600ms ease-out;
 }
 .heart-icon .fa-heart:hover::before {
   color: #ff79da;
@@ -254,7 +254,6 @@ ul {
   background-color: #99e2d0;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
-  transform-origin: right;
   transition: all 1500ms;
   z-index: -1;
 }
@@ -269,9 +268,8 @@ ul {
   cursor: pointer;
 }
 .food-card:hover .food-choose-btn {
-  width: 25%;
-  transform: translateX(0);
   z-index: 1;
+  width: 25%;
 }
 .food-card:hover .food-choose-btn > i {
   transform: rotate(360deg);
@@ -528,7 +526,7 @@ footer {
   }
 
   .meals-section {
-    width: 60%;
+    width: 45%;
   }
 }
 
